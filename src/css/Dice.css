@@ -1,0 +1,161 @@
+.wrapper {
+  perspective: 10000px;
+  perspective-origin: 50% 100px;
+  width: 111px;
+  height: 111px;
+  margin: 2px;
+  position: absolute;
+  -webkit-animation: mymove linear 1 8s;
+     -moz-animation: mymove linear 1 8s;
+       -o-animation: mymove linear 1 8s;
+          animation: mymove 1 8s;
+}
+
+.wrapper2 {
+  top: 130px;
+    -webkit-animation: mymove2 linear 1 8s;
+     -moz-animation: mymove2 linear 1 8s;
+       -o-animation: mymove2 linear 1 8s;
+          animation: mymove2 1 8s;
+}
+
+.die
+{
+width:inherit;
+height:inherit;
+position:absolute;
+transform-style: preserve-3d;  
+transition: all 1s linear;
+  -webkit-animation: spin 10s linear 1;
+     -moz-animation: spin 10s near 1;
+       -o-animation: spin 10s linear 1;
+          animation: spin 10s linear 1;
+
+}
+
+.die2 {
+    -webkit-animation: spin2 10s linear 1;
+     -moz-animation: spin2 10s near 1;
+       -o-animation: spin2 10s linear 1;
+          animation: spin2 10s linear 1;
+}
+
+.face {
+  display: block;
+  background: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: all 1s linear;
+}
+
+.face1{
+  background: url(http://upload.wikimedia.org/wikipedia/commons/c/c2/Die_Faces.svg) no-repeat -11px -121px;
+	width: 111px;
+	height: 111px;;
+  
+}
+.face2{
+  background: url(http://upload.wikimedia.org/wikipedia/commons/c/c2/Die_Faces.svg) no-repeat -588px -121px;
+	width: 111px;
+	height: 111px;
+}
+.face3{
+  background: url(http://upload.wikimedia.org/wikipedia/commons/c/c2/Die_Faces.svg) no-repeat -241px -121px;
+	width: 111px;
+	height: 111px;
+}
+.face4{
+  background: url(http://upload.wikimedia.org/wikipedia/commons/c/c2/Die_Faces.svg) no-repeat -356px -121px;
+	width: 111px;
+	height: 111px;
+}
+.face5{
+  background: url(http://upload.wikimedia.org/wikipedia/commons/c/c2/Die_Faces.svg) no-repeat -473px -121px;
+	width: 111px;
+	height: 111px;
+}
+.face6{
+  background: url(http://upload.wikimedia.org/wikipedia/commons/c/c2/Die_Faces.svg) no-repeat -126px -121px;
+	width: 111px;
+	height: 111px;
+}
+
+/* spin animation */
+
+
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg); }
+  }
+
+@-moz-keyframes spin {
+  100% { -webkit-transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg); }
+  }
+
+@-o-keyframes spin {
+  100% { -webkit-transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg); }
+  }
+
+@keyframes spin {
+  100% { -webkit-transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg); }
+  }
+
+/* spin2 animation */
+
+
+@-webkit-keyframes spin2 {
+  100% { -webkit-transform: rotateX(-1080deg) rotateY(360deg) rotateZ(360deg); }
+  }
+
+@-moz-keyframes spin2 {
+  100% { -webkit-transform: rotateX(-1080deg) rotateY(360deg) rotateZ(360deg); }
+  }
+
+@-o-keyframes spin2 {
+  100% { -webkit-transform: rotateX(-1080deg) rotateY(360deg) rotateZ(360deg); }
+  }
+
+@keyframes spin2 {
+  100% { -webkit-transform: rotateX(-1080deg) rotateY(360deg) rotateZ(360deg); }
+  }
+
+/* mymove animation */
+
+@keyframes mymove { 
+  0% {
+    left:-200px;
+  }
+  100% {
+    left:2400px;
+  }
+}
+
+@-webkit-keyframes mymove
+{
+  0% {
+    left: -200px;
+  }
+  100% {
+    left:2400px;
+  }
+}
+
+/* mymove2 animation */
+
+@keyframes mymove2 { 
+  0% {
+    left:-400px;
+  }
+  100% {
+    left:2200px;
+  }
+}
+
+@-webkit-keyframes mymove2
+{
+  0% {
+    left: -400px;
+  }
+  100% {
+    left:2200px;
+  }
+}
